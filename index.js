@@ -46,6 +46,13 @@ export default {
       )
     }
   }
+    if (url.pathname === "/api/student") {
+  return Response.json({
+    name: "Tvoje ime",
+    program: "Informatika",
+    letnik: 1
+  })
+}
 
     return new Response("Not found", { status: 404 })
   }
